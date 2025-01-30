@@ -110,11 +110,13 @@ label{
     color:greenyellow;
     font-size: 18px;
 }
-
+.cont{
+    display: flex;
+    justify-content: center;
+}
 button{
     display: flex;
     justify-content: center;
-    justify-self: center;
     padding-top: 6px;
     margin-top: 15px;
     border: 0px;
