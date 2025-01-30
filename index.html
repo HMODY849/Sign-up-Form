@@ -3,14 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./img/p1.png">
     <title>IPANDA</title>
 </head>
 <body>
-    <div>
-        <img>
+    <div class="head">
+    <div class="leftheader">
+    <img src="./img/p1.png" alt="panda face icon" id="iconHeader">
+        <h1>IPANDA</h1>
+    </div>
+    <img src="./img/m1.svg" class="menu-icon" id="menu-icon">
+    <ul class="nav-links" id="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Move</a></li>
+                    <li><a href="#">Series</a></li>
+                    <li><a href="#">Anime</a></li>
+            </li>
+        </ul>
     </div>
     <form action="#" method="post">
-        
+        <p>Join Us And Be Panda</p>
+        <label  for="firstName">First Name:</label>
+        <input  type="text"
+                id="firstName"
+                name="First-Name" 
+                required>
+        <label  for="lastName">Last Name:</label>
+        <input  type="text" 
+                id="lastName" 
+                name="Last-Name" 
+                required>
+        <br>
+        <label  for="age" id="Age">Age:</label>
+        <input  type="number" 
+                id="age" 
+                name="Age" 
+                min="16" 
+                max="70" 
+                title="Enter your age you must be over 16 years old" 
+                required>
+        <br>
+        <label  for="userEmail">Email:</label>
+        <br>
+        <input  type="email" 
+                id="userEmail" 
+                name="User-Email" 
+                placeholder="youremail@gmail.com"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+                required>
+        <br>
+        <label  for="password">Password:</label>
+        <br>
+        <input  type="password"
+                id="password" 
+                name="Password" 
+                pattern="^(?=.*[A-Z])(?=.*\d).{8,}$" 
+                title="your password shoud be at least 8 characters long,
+                contain at least one number,and at least one capital letter"
+                placeholder="e.g:Test1234"
+                required>  
+        <br>
+        <label  for="confirmPassward">Confirm Password:</label><br>
+        <input  type="password" 
+                id="confirmPassward" 
+                name="Confirm-Passward" 
+                pattern="^(?=.*[A-Z])(?=.*\d).{8,}$" 
+                title="your password shoud be at least 8 characters long,
+                contain at least one number, and at least one capital letter"
+                placeholder="e.g:Test1234"
+                required>
+        <p id="login">You already have an accaont? <a href="#">Login</a></p>
+        <button type="submit">Sign in</button>
     </form>
+    <script src="./script.js"></script>
 </body>
 </html>
