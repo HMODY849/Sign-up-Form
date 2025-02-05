@@ -129,7 +129,6 @@ button{
 }
 
 input{
-    font-family: Zain-Bold;
     appearance: none;
     box-sizing: border-box;
     border-radius: 4px;
@@ -200,6 +199,16 @@ input[type="number"],#Age{
         
     }
     form{
-    margin-top: 150px;
+        width:390px;
+        margin-top: 150px;
+    }
+    input[type="email"],
+    input[type="password"]
+    {
+        margin-left: 30px;
+        width: 85%;
+    }
+    input[type="text"]{
+        width: 80px;
     }
   }
